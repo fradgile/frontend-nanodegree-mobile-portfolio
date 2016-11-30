@@ -18,9 +18,8 @@
 5 | perfmatters.min.js | Moved to the bottom of body| Prevent blocking
 6 | Google Analytics | Moved to the bottom of body | Prevent blocking
 7 | print.css | Minified to `print.min.css`| Reduce download size.
-8 | print.min.css | Added `media="print"` to script tag |
-9 | style.css | Minified to `style.min.css`| Reduce download size.
-10 | style.min.css | Inlined | Prevent blocking.
+8 | style.css | Minified to `style.min.css`| Reduce download size.
+9 | style.min.css | Inlined | Prevent blocking.
 
 
 ### PageScore Testing
@@ -47,6 +46,10 @@
 ![ScreenShot](/Screenshots/Part2Before.png)
 ### Frame Rate After Modifications
 ![ScreenShot](/Screenshots/Part2After.png)
+
+
+***
+***
 
 ## Website Performance Optimization portfolio project
 
