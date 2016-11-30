@@ -4,8 +4,6 @@
 2. Open index.html in your favorite browser.
 
 
-
-
 # PageScore improvements
 #### index.html modifications
 
