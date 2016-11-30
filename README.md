@@ -1,3 +1,43 @@
+# PageScore improvements
+
+  #| What was changed? | How? | Purpose |
+ ------------ | :----------- | -----------: |
+1 | pizzeria.jpg | Compressed and resized using imageoptimizer.net| Reduce download size.
+2 | Google Fonts | Removed as it did not seem to be used anywhere | Reduce download size.
+3 | perfmatters.js | Minified to `perfmatters.min.js` | Reduce download size.
+4 | perfmatters.min.js | Added `async`  to scrippt tag | Prevent blocking
+5 | perfmatters.min.js | Moved to the bottom of body| Prevent blocking
+6 | Google Analytics | Moved to the bottom of body | Prevent blocking
+7 | print.css | Minified to `print.min.css`| Reduce download size.
+8 | print.min.css | Added `media="print"` to script tag |
+9 | style.css | Minified to `style.min.css`| Reduce download size.
+10 | style.min.css | Inlined | Prevent blocking.
+
+
+### PageScore Testing
+1. [Installed the npm http-server package to serve my pages locally.](https://www.npmjs.com/package/http-server)
+2. [Installed ngrok to expose my local website to the internet.](https://ngrok.com/)
+3. [Analyzed my website using PageSpeed Insight Tool.](https://developers.google.com/speed/pagespeed/insights/)
+
+### Score Before Modifications
+![ScreenShot](/Screenshots/PageSpeedBefore.png)
+### Score After Modifications
+![ScreenShot](/Screenshots/PageSpeedAfter.png)
+
+# Getting Rid of Jank - Frame Rate & Computational Efficiency
+
+#| Modification | Purpose
+----------- | ------------ | :----------- |
+1|Replaced querySelector with getElementById | More performant
+2|Replaced querySelectorAll with getElementsByClassName | More performant
+3| Moved code out of loops where possible. In particular see `changePizzaSizes()`, `updatePositions()` and `document.addEventListener('DOMContentLoaded', function()` | Unnecessary repition of code
+4|Reduced the number of sliding pizzas from 200. See `document.addEventListener('DOMContentLoaded', function()` | No need for 200. Just slowing everything down.
+
+### Frame Rate Before Modifications
+![ScreenShot](/Screenshots/Part2Before.png)
+### Frame Rate After Modifications
+![ScreenShot](/Screenshots/Part2After.png)
+
 ## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
@@ -32,7 +72,7 @@ Profile, optimize, measure... and then lather, rinse, and repeat. Good luck!
 
 ####Part 2: Optimize Frames per Second in pizza.html
 
-To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js. 
+To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js.
 
 You might find the FPS Counter/HUD Display useful in Chrome developer tools described here: [Chrome Dev Tools tips-and-tricks](https://developer.chrome.com/devtools/docs/tips-and-tricks).
 
