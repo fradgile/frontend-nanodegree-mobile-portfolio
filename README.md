@@ -1,4 +1,13 @@
+# How to run website
+[Here's the website hosted on Github](https://fradgile.github.io/frontend-nanodegree-mobile-portfolio/) or you can do the following
+1. Clone or download repository.
+2. Open index.html in your favorite browser.
+
+
+
+
 # PageScore improvements
+#### index.html modifications
 
 \# | What was changed? | How? | Purpose |
  ------------ | :----------- | -----------: |-----------:
@@ -25,6 +34,7 @@
 ![ScreenShot](/Screenshots/PageSpeedAfter.png)
 
 # Getting Rid of Jank - Frame Rate & Computational Efficiency
+#### main.js modifications
 
 \# | Modification | Purpose
 ----------- | ------------ | :----------- |
