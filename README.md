@@ -1,5 +1,6 @@
 # How to run website
 [Here's the website hosted on Github](https://fradgile.github.io/frontend-nanodegree-mobile-portfolio/) or you can do the following
+
 1. Clone or download repository.
 2. Open index.html in your favorite browser.
 
