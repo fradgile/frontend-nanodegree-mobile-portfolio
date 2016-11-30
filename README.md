@@ -1,6 +1,6 @@
 # PageScore improvements
 
-  #| What was changed? | How? | Purpose |
+\#| What was changed? | How? | Purpose |
  ------------ | :----------- | -----------: |
 1 | pizzeria.jpg | Compressed and resized using imageoptimizer.net| Reduce download size.
 2 | Google Fonts | Removed as it did not seem to be used anywhere | Reduce download size.
@@ -26,7 +26,7 @@
 
 # Getting Rid of Jank - Frame Rate & Computational Efficiency
 
-#| Modification | Purpose
+\#| Modification | Purpose
 ----------- | ------------ | :----------- |
 1|Replaced querySelector with getElementById | More performant
 2|Replaced querySelectorAll with getElementsByClassName | More performant
